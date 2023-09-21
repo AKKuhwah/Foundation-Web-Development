@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .header { grid-area: Header;}
+        .menu { grid-area: Menu;}
+        .footer { grid-area: Footer;}
+        .picture { grid-area: Picture}
+        .ads { grid-area: Ads;}
+
+        .grid-container {
+            display:grid;
+            grid-template-areas: 
+            'Header Header Header Header Header'
+            'Header Header Header Header Header'
+            'Menu Picture Picture Picture Ads'
+            'Menu Picture Picture Picture Footer'
+            
+            ;
+            gap: 10px;
+            background-color: antiquewhite;
+            padding: 10px;
+            
+        }
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="footer">Footer</div>
+        <div class="picture">Picture</div>
+        <div class="ads">Ads</div>
+    </div>
+</body>
+</html>
