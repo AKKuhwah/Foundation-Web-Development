@@ -5,17 +5,23 @@
         .header { grid-area: Header;}
         .menu { grid-area: Menu;}
         .footer { grid-area: Footer;}
-        .picture { grid-area: Picture}
+        .picture { grid-area: Picture;}
         .ads { grid-area: Ads;}
+        .line { grid-area: Line; }
+        .dragon {grid-area: Dragon;}
+        .water {grid-area: Water;}
+        .sky {grid-area: Sky;}
+        .ninja {grid-area: Ninja;}
+        .star {grid-area: Star;}
+        .youtube {grid-area: Youtube;}
 
         .grid-container {
-            display:grid;
+            display: grid;
             grid-template-areas: 
-            'Header Header Header Header Header'
-            'Header Header Header Header Header'
-            'Menu Picture Picture Picture Ads'
-            'Menu Picture Picture Picture Footer'
-            
+            'Header Menu Footer'
+            'Picture Ads Line'
+            'Dragon Water Sky'
+            'Ninja Star Youtube'
             ;
             gap: 10px;
             background-color: antiquewhite;
@@ -32,11 +38,18 @@
 </head>
 <body>
     <div class="grid-container">
+        <div class="sky">Sky</div>
         <div class="header">Header</div>
         <div class="menu">Menu</div>
         <div class="footer">Footer</div>
         <div class="picture">Picture</div>
         <div class="ads">Ads</div>
+        <div class="water">Water</div>
+        <div class="dragon">Dragon</div>
+        <div class="line">Line</div>
+        <div class="ninja">Ninja</div>
+        <div class="star">Star</div>
+        <div class="youtube">Youtube</div>
     </div>
 </body>
 </html>
