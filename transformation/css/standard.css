@@ -1,0 +1,41 @@
+button {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+
+}
+
+.button-storage {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 100px;
+    justify-content: center;
+}
+
+.transform:hover {
+    transform: matrix(5, 1, 1, 1, 1, 1);
+}
+
+.translate {
+    transition-property: all;
+    transition-duration: 2s;
+}
+.translate:hover {
+    width: 200px;
+    height: 300px;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: bg;
+    animation-iteration-count: 5;
+}
+
+@keyframes bg {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
