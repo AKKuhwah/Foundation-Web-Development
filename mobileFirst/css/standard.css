@@ -1,0 +1,29 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        display: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    p {
+        display: none;
+    }
+}
