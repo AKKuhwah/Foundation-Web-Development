@@ -18,8 +18,13 @@ footer > nav {
     width: 100%;
 }
 
+.images{
+    display: flex;
+    flex-direction: row;
+}
+
 img {
-    max-width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -30,5 +35,13 @@ img {
     }
     footer > nav {
         display: none;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        height: auto;
     }
 }
