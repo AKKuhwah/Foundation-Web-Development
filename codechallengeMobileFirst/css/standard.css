@@ -1,5 +1,5 @@
 
-body > nav {
+.menu {
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-footer > nav {
+.menuFooter {
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -28,12 +28,14 @@ img {
     height: auto;
 }
 
+
+
 @media (max-width: 600px) {
-    body > nav {
+    .menu {
         display: grid;
         grid-template-columns: auto;
     }
-    footer > nav {
+    .menuFooter {
         display: none;
     }
     .images {
