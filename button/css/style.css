@@ -2,6 +2,7 @@ button {
     color: blue;
     size: 3rem;
     background-color: black;
+    font-size: 200px;
 }
 
 button:hover {

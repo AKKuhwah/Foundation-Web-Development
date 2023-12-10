@@ -1,0 +1,73 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.menuMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+section > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5%;
+}
+
+.menuFooter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.menuFooter > a {
+    color: white;
+    border: none;
+}
+
+
+
+
+@media (min-width:600px) {
+    .menuMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menuMenu > a {
+        border: none;
+    }
+    
+    .menuFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .dinosaur {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        padding: 10px;
+    }
+
+    .dinosaur > p {
+        padding-top: 5%;
+    }
+}

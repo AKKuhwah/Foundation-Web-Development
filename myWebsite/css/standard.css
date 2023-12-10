@@ -14,3 +14,17 @@ a {
     text-decoration: none;
 }
 
+.foodShelter {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.foodParagraph {
+    display: flex;
+    padding: 20px;
+}
