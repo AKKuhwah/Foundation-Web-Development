@@ -15,7 +15,6 @@ button {
     animation: around 4s infinite;
 }
 
-
 @keyframes around {
     25%   {border-top: inset red;
             color:red}
@@ -29,6 +28,27 @@ button {
             color: black;}
 }
 
+footer {
+    animation: change 4s infinite;
+}
+footer > p {
+    animation: changeText 4s infinite;
+}
+footer > h4 {
+    animation: changeText 4s infinite;
+}
+
+@keyframes change {
+    from {background-color: black;}
+    to {background-color: white;}
+}
+
+@keyframes changeText {
+    from {color:gold}
+    to {color: black}
+}
+
+
 /* Transition */
 img {
     display: block;
@@ -40,6 +60,12 @@ img {
 img:hover {
     width: 80%;
     height: auto;
+}
+
+h1:hover {
+    font-size: 4rem;
+    color: gold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*Navbar Styling*/
@@ -83,6 +109,9 @@ footer > p:nth-child(3) {
 }
 
 /* index styling */
+#crazyFact {
+    text-align: center;
+}
 
 .intro > h3 {
     display: flex;
@@ -121,6 +150,11 @@ footer > p:nth-child(3) {
 .watch {
     text-align: center;
 }
+/* workout page styling */
+section > p {
+    text-align: center;
+}
+
 
 /* Media Query */
 
@@ -174,6 +208,38 @@ footer > p:nth-child(3) {
         width: 80%;
         height: auto;
     }
+
+    /* Workout Styling */
+    .arm {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    .leg {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    .back {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    .cardio {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    /* nutition styling */
+    .dietOption > ol {
+        list-style-type: none;
+    }
+    .dietOption {
+        text-align: center;
+    }
 }
+
+
+
 
 
